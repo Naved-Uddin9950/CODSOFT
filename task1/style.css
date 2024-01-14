@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+header nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+header nav ul li {
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+header nav ul li:hover {
+  color: #2b37a5;
+}
+
+header button {
+  outline: none;
+  cursor: pointer;
+  padding: 13px 20px;
+  background: #0a1045;
+  border-radius: 30px;
+  font-size: 17px;
+  color: white;
+  border: none;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+header button:hover {
+  background: #ffffff;
+  color: #333333;
+}
+
+/* main section start */
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1568992687947-868a62a9f521?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+
+main .poster-heading {
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+main .poster-heading h3 {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #0a1045;
+}
+
+main .poster-heading h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+main .poster-heading p {
+  color: #ffffff;
+}
+
+main .poster-heading-btn {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+main .poster-heading-btn button:nth-child(1) {
+  background: transparent;
+  border: 1px solid #0a1045;
+  color: #0a1045;
+  transition: all 0.3s ease-in-out;
+}
+
+main .poster-heading-btn button:nth-child(2) {
+  background: #0a1045;
+  color: #ffffff;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+main .poster-heading-btn button:hover {
+  background: #ffffff;
+  color: #333333;
+}
+
+/* about us section */
+
+main .about-us-section {
+  padding: 50px 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+main .about-us-section .about-us {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+main .about-us-section .about-us h1 {
+  font-size: 42px;
+  text-transform: uppercase;
+  color: #0a1045;
+}
+
+main .about-us-section .about-us p {
+  color: #333333;
+}
+
+main .about-us-section .about-us button {
+  outline: none;
+  cursor: pointer;
+  padding: 13px 20px;
+  background: #0a1045;
+  border-radius: 30px;
+  font-size: 17px;
+  color: #ffffff;
+  border: none;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+main .about-us-section .about-us button:hover {
+  background: #ffffff;
+  color: #333333;
+}
+
+main .about-us-section .about-us-img {
+  width: 350px;
+}
+
+main .about-us-section .about-us-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* services section */
+
+main .services-section {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 0 5%;
+}
+
+main .services-section .services-heading {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px 0;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+main .services-section .services-heading h2 {
+  font-size: 36px;
+  color: #333333;
+}
+
+main .services-section .services-heading .services-cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+main .services-section .services-heading .services-cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  width: 300px;
+  gap: 20px;
+  cursor: pointer;
+  padding: 50px 20px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+main .services-section .services-heading .services-cards .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+}
+
+main .services-section .services-heading .services-cards .card .icon-circle {
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0a1045;
+}
+
+main .services-section .services-heading .services-cards .card .icon-circle i {
+  color: #ffffff;
+  font-size: 50px;
+}
+
+main .services-section .services-heading .services-cards .card :nth-child(2) {
+  font-size: 20px;
+  color: #333333;
+}
+
+main .services-section .services-heading .services-cards .card :nth-child(3) {
+  color: #666666;
+}
+
+/* footer */
+
+main footer {
+  padding: 50px 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+main footer .first-col,
+main footer .second-col,
+main footer .third-col,
+main footer .fourth-col {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main footer .first-col h1,
+main footer .second-col h3,
+main footer .third-col h3 {
+  color: #333333;
+  font-size: 18px;
+}
+
+main footer .second-col ul,
+main footer .third-col ul {
+  list-style: none;
+  line-height: 2;
+  color: #666666;
+}
+
+main footer .fourth-col input {
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  padding: 15px;
+  border: 1px solid #333333;
+  border-radius: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+  header nav {
+    padding: 15px 5%;
+  }
+
+  main .poster-heading {
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+  }
+
+  main .poster-heading-btn {
+    justify-content: center;
+  }
+
+  main .about-us-section {
+    justify-content: center;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 858px) {
+  header nav {
+    justify-content: space-evenly;
+    padding: 15px 0;
+  }
+
+  header nav ul {
+    display: none;
+  }
+}
